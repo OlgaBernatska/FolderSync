@@ -81,22 +81,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="2way.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\images.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2_way.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\double-arrow--refresh-icon-21016.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\right.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Working-hours-theme-icon.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

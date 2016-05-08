@@ -32,12 +32,28 @@ namespace Synch_UI
 
         private void btn_Browse1_Click(object sender, EventArgs e)
         {
+            FolderBrowserDialog fldBrwDialog_Browse1 = new FolderBrowserDialog();
+            fldBrwDialog_Browse1.RootFolder = Environment.SpecialFolder.Desktop;
+            fldBrwDialog_Browse1.Description = "Select path to folder 1";
+            fldBrwDialog_Browse1.ShowNewFolderButton = false;
 
+            if (fldBrwDialog_Browse1.ShowDialog() == DialogResult.OK) 
+            {
+                txb_Path_1.Text = fldBrwDialog_Browse1.SelectedPath;
+            }
         }
 
         private void btn_Browse2_Click(object sender, EventArgs e)
         {
+            FolderBrowserDialog fldBrwDialog_Browse2 = new FolderBrowserDialog();
+            fldBrwDialog_Browse2.RootFolder = Environment.SpecialFolder.Desktop;
+            fldBrwDialog_Browse2.Description = "Select path to folder 2";
+            fldBrwDialog_Browse2.ShowNewFolderButton = true ;
 
+            if (fldBrwDialog_Browse2.ShowDialog() == DialogResult.OK) 
+            {
+                txb_Path_2.Text = fldBrwDialog_Browse2.SelectedPath;
+            }
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -109,5 +125,6 @@ namespace Synch_UI
         {
 
         }
+
     }
 }

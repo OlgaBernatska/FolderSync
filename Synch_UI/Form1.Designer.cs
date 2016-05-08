@@ -43,6 +43,7 @@
             this.radioBtn_TwoWay = new System.Windows.Forms.RadioButton();
             this.radioBtn_OneWay = new System.Windows.Forms.RadioButton();
             this.groupBox_Schedule = new System.Windows.Forms.GroupBox();
+            this.radioBtn_OneTime = new System.Windows.Forms.RadioButton();
             this.lbl_days = new System.Windows.Forms.Label();
             this.lbl_hours = new System.Windows.Forms.Label();
             this.lbl_min = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@
             this.radioBtn_days = new System.Windows.Forms.RadioButton();
             this.radioBtn_hour = new System.Windows.Forms.RadioButton();
             this.radioBtn_min = new System.Windows.Forms.RadioButton();
-            this.radioBtn_OneTime = new System.Windows.Forms.RadioButton();
             this.groupbox_SyncTask.SuspendLayout();
             this.groupBox_Schedule.SuspendLayout();
             this.SuspendLayout();
@@ -119,7 +119,7 @@
             // 
             // btn_Browse2
             // 
-            this.btn_Browse2.Location = new System.Drawing.Point(556, 128);
+            this.btn_Browse2.Location = new System.Drawing.Point(556, 129);
             this.btn_Browse2.Name = "btn_Browse2";
             this.btn_Browse2.Size = new System.Drawing.Size(75, 20);
             this.btn_Browse2.TabIndex = 6;
@@ -220,6 +220,18 @@
             this.groupBox_Schedule.Text = "Synchronization Schedule";
             this.groupBox_Schedule.Enter += new System.EventHandler(this.groupBox_Schedule_Enter);
             // 
+            // radioBtn_OneTime
+            // 
+            this.radioBtn_OneTime.AutoSize = true;
+            this.radioBtn_OneTime.Location = new System.Drawing.Point(6, 25);
+            this.radioBtn_OneTime.Name = "radioBtn_OneTime";
+            this.radioBtn_OneTime.Size = new System.Drawing.Size(67, 17);
+            this.radioBtn_OneTime.TabIndex = 9;
+            this.radioBtn_OneTime.TabStop = true;
+            this.radioBtn_OneTime.Text = "One time";
+            this.radioBtn_OneTime.UseVisualStyleBackColor = true;
+            this.radioBtn_OneTime.CheckedChanged += new System.EventHandler(this.radioBtn_OneTime_CheckedChanged);
+            // 
             // lbl_days
             // 
             this.lbl_days.AutoSize = true;
@@ -307,18 +319,6 @@
             this.radioBtn_min.Text = "Sync every";
             this.radioBtn_min.UseVisualStyleBackColor = true;
             this.radioBtn_min.CheckedChanged += new System.EventHandler(this.radioBtn_10min_CheckedChanged);
-            // 
-            // radioBtn_OneTime
-            // 
-            this.radioBtn_OneTime.AutoSize = true;
-            this.radioBtn_OneTime.Location = new System.Drawing.Point(6, 25);
-            this.radioBtn_OneTime.Name = "radioBtn_OneTime";
-            this.radioBtn_OneTime.Size = new System.Drawing.Size(67, 17);
-            this.radioBtn_OneTime.TabIndex = 9;
-            this.radioBtn_OneTime.TabStop = true;
-            this.radioBtn_OneTime.Text = "One time";
-            this.radioBtn_OneTime.UseVisualStyleBackColor = true;
-            this.radioBtn_OneTime.CheckedChanged += new System.EventHandler(this.radioBtn_OneTime_CheckedChanged);
             // 
             // Main_Form
             // 
