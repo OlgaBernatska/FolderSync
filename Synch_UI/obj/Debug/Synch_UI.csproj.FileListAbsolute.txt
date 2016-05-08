@@ -1,0 +1,9 @@
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\bin\Debug\Synch_UI.exe.config
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\bin\Debug\Synch_UI.exe
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\bin\Debug\Synch_UI.pdb
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\obj\Debug\Synch_UI.csprojResolveAssemblyReference.cache
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\obj\Debug\Synch_UI.Main_Form.resources
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\obj\Debug\Synch_UI.Properties.Resources.resources
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\obj\Debug\Synch_UI.csproj.GenerateResource.Cache
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\obj\Debug\Synch_UI.exe
+c:\users\asus\documents\visual studio 2015\Projects\Synch_UI\Synch_UI\obj\Debug\Synch_UI.pdb
