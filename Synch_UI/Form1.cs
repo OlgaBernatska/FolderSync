@@ -81,24 +81,65 @@ namespace Synch_UI
 
         }
 
+        private void radioBtn_OneTime_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioBtn_OneTime.Checked)
+            {
+                textBox_min.Enabled = false;
+                textBox_hours.Enabled = false;
+                textBox_days.Enabled = false;
+            }
+        }
+
         private void radioBtn_10min_CheckedChanged(object sender, EventArgs e)
         {
-
+            //textBox_min.Enabled = radioBtn_min.Checked;
+            if (radioBtn_min.Checked)
+            {
+                textBox_min.Enabled = true;
+                textBox_hours.Enabled = false;
+                textBox_days.Enabled = false;
+            }
+            else
+            {
+                textBox_min.Enabled = false;
+            }
         }
 
         private void radioBtn_1hour_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (radioBtn_hour.Checked)
+            {
+                textBox_min.Enabled = false;
+                textBox_hours.Enabled = true;
+                textBox_days.Enabled = false;
+            }
+            else
+            {
+                textBox_hours.Enabled = false;
+            }
         }
 
         private void radioBtn_24hours_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (radioBtn_days.Checked)
+            {
+                textBox_min.Enabled = false;
+                textBox_hours.Enabled = false;
+                textBox_days.Enabled = true;
+            }
+            else
+            {
+                textBox_days.Enabled = false;
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            //if (textBox_min.Focused)
+            //{
+            //    radioBtn_min.Checked = true;
+            //}
         }
 
         private void textBox_hours_TextChanged(object sender, EventArgs e)
@@ -121,10 +162,11 @@ namespace Synch_UI
 
         }
 
-        private void radioBtn_OneTime_CheckedChanged(object sender, EventArgs e)
+
+
+        private void radioBtn_OneWay_CheckedChanged_1(object sender, EventArgs e)
         {
 
         }
-
     }
 }

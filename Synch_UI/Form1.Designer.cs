@@ -192,6 +192,7 @@
             // radioBtn_OneWay
             // 
             this.radioBtn_OneWay.AutoSize = true;
+            this.radioBtn_OneWay.Checked = true;
             this.radioBtn_OneWay.Location = new System.Drawing.Point(6, 30);
             this.radioBtn_OneWay.Name = "radioBtn_OneWay";
             this.radioBtn_OneWay.Size = new System.Drawing.Size(97, 17);
@@ -199,6 +200,7 @@
             this.radioBtn_OneWay.TabStop = true;
             this.radioBtn_OneWay.Text = "One-Way Sync";
             this.radioBtn_OneWay.UseVisualStyleBackColor = true;
+            this.radioBtn_OneWay.CheckedChanged += new System.EventHandler(this.radioBtn_OneWay_CheckedChanged_1);
             // 
             // groupBox_Schedule
             // 
@@ -223,6 +225,7 @@
             // radioBtn_OneTime
             // 
             this.radioBtn_OneTime.AutoSize = true;
+            this.radioBtn_OneTime.Checked = true;
             this.radioBtn_OneTime.Location = new System.Drawing.Point(6, 25);
             this.radioBtn_OneTime.Name = "radioBtn_OneTime";
             this.radioBtn_OneTime.Size = new System.Drawing.Size(67, 17);
@@ -262,6 +265,7 @@
             // 
             // textBox_days
             // 
+            this.textBox_days.Enabled = false;
             this.textBox_days.Location = new System.Drawing.Point(82, 125);
             this.textBox_days.Name = "textBox_days";
             this.textBox_days.Size = new System.Drawing.Size(46, 20);
@@ -270,6 +274,7 @@
             // 
             // textBox_hours
             // 
+            this.textBox_hours.Enabled = false;
             this.textBox_hours.Location = new System.Drawing.Point(82, 97);
             this.textBox_hours.Name = "textBox_hours";
             this.textBox_hours.Size = new System.Drawing.Size(46, 20);
@@ -278,10 +283,12 @@
             // 
             // textBox_min
             // 
+            this.textBox_min.Enabled = false;
             this.textBox_min.Location = new System.Drawing.Point(82, 64);
             this.textBox_min.Name = "textBox_min";
             this.textBox_min.Size = new System.Drawing.Size(46, 20);
             this.textBox_min.TabIndex = 3;
+            this.textBox_min.TabStop = false;
             this.textBox_min.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // radioBtn_days
@@ -315,7 +322,6 @@
             this.radioBtn_min.Name = "radioBtn_min";
             this.radioBtn_min.Size = new System.Drawing.Size(78, 17);
             this.radioBtn_min.TabIndex = 0;
-            this.radioBtn_min.TabStop = true;
             this.radioBtn_min.Text = "Sync every";
             this.radioBtn_min.UseVisualStyleBackColor = true;
             this.radioBtn_min.CheckedChanged += new System.EventHandler(this.radioBtn_10min_CheckedChanged);
