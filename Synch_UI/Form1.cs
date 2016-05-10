@@ -24,6 +24,23 @@ namespace Synch_UI
 
         private void txb_Path_1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void txb_Path_1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (txb_Path_1.Text == "Enter Path to Folder 1")
+            {
+                txb_Path_1.Text = string.Empty;
+            }
+        }
+
+        private void txb_Path_2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (txb_Path_2.Text == "Enter Path to Folder 2")
+            {
+                txb_Path_2.Clear();
+            }
         }
 
         private void txb_Path_2_TextChanged(object sender, EventArgs e)
@@ -93,7 +110,6 @@ namespace Synch_UI
 
         private void radioBtn_10min_CheckedChanged(object sender, EventArgs e)
         {
-            //textBox_min.Enabled = radioBtn_min.Checked;
             if (radioBtn_min.Checked)
             {
                 textBox_min.Enabled = true;
@@ -136,10 +152,7 @@ namespace Synch_UI
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //if (textBox_min.Focused)
-            //{
-            //    radioBtn_min.Checked = true;
-            //}
+
         }
 
         private void textBox_hours_TextChanged(object sender, EventArgs e)
@@ -162,9 +175,120 @@ namespace Synch_UI
 
         }
 
-
-
         private void radioBtn_OneWay_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioBtn_Folder1_CheckedChanged(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void radioBtn_Folder2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_ExcludeFolders1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_ExcludeFolders1.Checked)
+            {
+                textBox_ExcludeFolders1.Enabled = true;
+            }
+            else
+            {
+                textBox_ExcludeFolders1.Enabled = false;
+            }
+        }
+
+        private void textBox_ExcludeFolders1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_ExcludeFiles1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_ExcludeFiles1.Checked)
+            {
+                textBox_ExcludeFiles1.Enabled = true;
+            }
+            else
+            {
+                textBox_ExcludeFiles1.Enabled = false;
+            }
+        }
+
+        private void textBox_ExcludeFiles1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_IncludeFiles1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_IncludeFiles1.Checked)
+            {
+                textBox_IncludeFiles1.Enabled = true;
+            }
+            else
+            {
+                textBox_IncludeFiles1.Enabled = false;
+            }
+        }
+
+        private void textBox_IncludeFiles1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_ExcludeFolders2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_ExcludeFolders2.Checked)
+            {
+                textBox_ExcludeFolders2.Enabled = true;
+            }
+            else
+            {
+                textBox_ExcludeFolders2.Enabled = false;
+            }
+        }
+
+        private void textBox_ExcludeFolders2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_ExcludeFiles2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_ExcludeFiles2.Checked)
+            {
+                textBox_ExcludeFiles2.Enabled = true;
+            }
+            else
+            {
+                textBox_ExcludeFiles2.Enabled = false;
+            }
+        }
+
+        private void textBox_ExcludeFiles2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox_IncludeFiles2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_IncludeFiles2.Checked)
+            {
+                textBox_IncludeFiles2.Enabled = true;
+            }
+            else
+            {
+                textBox_IncludeFiles2.Enabled = false;
+            }
+        }
+
+        private void textBox_IncludeFiles2_TextChanged(object sender, EventArgs e)
         {
 
         }

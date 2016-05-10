@@ -36,9 +36,6 @@
             this.btn_Browse1 = new System.Windows.Forms.Button();
             this.btn_Browse2 = new System.Windows.Forms.Button();
             this.lbl_Folders_for_sync = new System.Windows.Forms.Label();
-            this.lbl_Source = new System.Windows.Forms.Label();
-            this.checkBoxPath1 = new System.Windows.Forms.CheckBox();
-            this.checkBoxPath2 = new System.Windows.Forms.CheckBox();
             this.groupbox_SyncTask = new System.Windows.Forms.GroupBox();
             this.radioBtn_TwoWay = new System.Windows.Forms.RadioButton();
             this.radioBtn_OneWay = new System.Windows.Forms.RadioButton();
@@ -53,34 +50,55 @@
             this.radioBtn_days = new System.Windows.Forms.RadioButton();
             this.radioBtn_hour = new System.Windows.Forms.RadioButton();
             this.radioBtn_min = new System.Windows.Forms.RadioButton();
+            this.lbl_Source = new System.Windows.Forms.Label();
+            this.radioBtn_Folder1 = new System.Windows.Forms.RadioButton();
+            this.radioBtn_Folder2 = new System.Windows.Forms.RadioButton();
+            this.groupBox_SyncFilters = new System.Windows.Forms.GroupBox();
+            this.lbl_Folder1Filter = new System.Windows.Forms.Label();
+            this.lbl_Folder2Filter = new System.Windows.Forms.Label();
+            this.checkBox_ExcludeFolders1 = new System.Windows.Forms.CheckBox();
+            this.checkBox_ExcludeFiles1 = new System.Windows.Forms.CheckBox();
+            this.checkBox_IncludeFiles1 = new System.Windows.Forms.CheckBox();
+            this.checkBox_ExcludeFolders2 = new System.Windows.Forms.CheckBox();
+            this.checkBox_ExcludeFiles2 = new System.Windows.Forms.CheckBox();
+            this.checkBox_IncludeFiles2 = new System.Windows.Forms.CheckBox();
+            this.textBox_ExcludeFolders1 = new System.Windows.Forms.TextBox();
+            this.textBox_ExcludeFiles1 = new System.Windows.Forms.TextBox();
+            this.textBox_IncludeFiles1 = new System.Windows.Forms.TextBox();
+            this.textBox_ExcludeFolders2 = new System.Windows.Forms.TextBox();
+            this.textBox_ExcludeFiles2 = new System.Windows.Forms.TextBox();
+            this.textBox_IncludeFiles2 = new System.Windows.Forms.TextBox();
             this.groupbox_SyncTask.SuspendLayout();
             this.groupBox_Schedule.SuspendLayout();
+            this.groupBox_SyncFilters.SuspendLayout();
             this.SuspendLayout();
             // 
             // txb_Path_1
             // 
             this.txb_Path_1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txb_Path_1.Location = new System.Drawing.Point(254, 90);
+            this.txb_Path_1.Location = new System.Drawing.Point(311, 89);
             this.txb_Path_1.Name = "txb_Path_1";
             this.txb_Path_1.Size = new System.Drawing.Size(283, 20);
             this.txb_Path_1.TabIndex = 0;
             this.txb_Path_1.Text = "Enter Path to Folder 1";
+            this.txb_Path_1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txb_Path_1_MouseClick);
             this.txb_Path_1.TextChanged += new System.EventHandler(this.txb_Path_1_TextChanged);
             // 
             // txb_Path_2
             // 
             this.txb_Path_2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txb_Path_2.Location = new System.Drawing.Point(254, 129);
+            this.txb_Path_2.Location = new System.Drawing.Point(311, 123);
             this.txb_Path_2.Name = "txb_Path_2";
             this.txb_Path_2.Size = new System.Drawing.Size(283, 20);
             this.txb_Path_2.TabIndex = 1;
             this.txb_Path_2.Text = "Enter Path to Folder 2";
+            this.txb_Path_2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txb_Path_2_MouseClick);
             this.txb_Path_2.TextChanged += new System.EventHandler(this.txb_Path_2_TextChanged);
             // 
             // lbl_Folder1
             // 
             this.lbl_Folder1.AutoSize = true;
-            this.lbl_Folder1.Location = new System.Drawing.Point(203, 93);
+            this.lbl_Folder1.Location = new System.Drawing.Point(251, 92);
             this.lbl_Folder1.Name = "lbl_Folder1";
             this.lbl_Folder1.Size = new System.Drawing.Size(45, 13);
             this.lbl_Folder1.TabIndex = 2;
@@ -89,7 +107,7 @@
             // lbl2_Folder2
             // 
             this.lbl2_Folder2.AutoSize = true;
-            this.lbl2_Folder2.Location = new System.Drawing.Point(203, 132);
+            this.lbl2_Folder2.Location = new System.Drawing.Point(251, 126);
             this.lbl2_Folder2.Name = "lbl2_Folder2";
             this.lbl2_Folder2.Size = new System.Drawing.Size(45, 13);
             this.lbl2_Folder2.TabIndex = 3;
@@ -99,7 +117,7 @@
             // 
             this.btn_StartSync.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_StartSync.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.btn_StartSync.Location = new System.Drawing.Point(341, 207);
+            this.btn_StartSync.Location = new System.Drawing.Point(401, 386);
             this.btn_StartSync.Name = "btn_StartSync";
             this.btn_StartSync.Size = new System.Drawing.Size(125, 55);
             this.btn_StartSync.TabIndex = 4;
@@ -109,7 +127,7 @@
             // 
             // btn_Browse1
             // 
-            this.btn_Browse1.Location = new System.Drawing.Point(556, 90);
+            this.btn_Browse1.Location = new System.Drawing.Point(612, 88);
             this.btn_Browse1.Name = "btn_Browse1";
             this.btn_Browse1.Size = new System.Drawing.Size(75, 20);
             this.btn_Browse1.TabIndex = 5;
@@ -119,7 +137,7 @@
             // 
             // btn_Browse2
             // 
-            this.btn_Browse2.Location = new System.Drawing.Point(556, 129);
+            this.btn_Browse2.Location = new System.Drawing.Point(612, 123);
             this.btn_Browse2.Name = "btn_Browse2";
             this.btn_Browse2.Size = new System.Drawing.Size(75, 20);
             this.btn_Browse2.TabIndex = 6;
@@ -131,40 +149,11 @@
             // 
             this.lbl_Folders_for_sync.AutoSize = true;
             this.lbl_Folders_for_sync.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.lbl_Folders_for_sync.Location = new System.Drawing.Point(254, 50);
+            this.lbl_Folders_for_sync.Location = new System.Drawing.Point(297, 41);
             this.lbl_Folders_for_sync.Name = "lbl_Folders_for_sync";
             this.lbl_Folders_for_sync.Size = new System.Drawing.Size(243, 26);
             this.lbl_Folders_for_sync.TabIndex = 7;
             this.lbl_Folders_for_sync.Text = "Folders for synchronize:";
-            // 
-            // lbl_Source
-            // 
-            this.lbl_Source.AutoSize = true;
-            this.lbl_Source.Location = new System.Drawing.Point(638, 60);
-            this.lbl_Source.Name = "lbl_Source";
-            this.lbl_Source.Size = new System.Drawing.Size(41, 26);
-            this.lbl_Source.TabIndex = 8;
-            this.lbl_Source.Text = "Source\r\nFolder\r\n";
-            // 
-            // checkBoxPath1
-            // 
-            this.checkBoxPath1.AutoSize = true;
-            this.checkBoxPath1.Location = new System.Drawing.Point(651, 94);
-            this.checkBoxPath1.Name = "checkBoxPath1";
-            this.checkBoxPath1.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxPath1.TabIndex = 9;
-            this.checkBoxPath1.UseVisualStyleBackColor = true;
-            this.checkBoxPath1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // checkBoxPath2
-            // 
-            this.checkBoxPath2.AutoSize = true;
-            this.checkBoxPath2.Location = new System.Drawing.Point(651, 132);
-            this.checkBoxPath2.Name = "checkBoxPath2";
-            this.checkBoxPath2.Size = new System.Drawing.Size(15, 14);
-            this.checkBoxPath2.TabIndex = 10;
-            this.checkBoxPath2.UseVisualStyleBackColor = true;
-            this.checkBoxPath2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // groupbox_SyncTask
             // 
@@ -185,7 +174,6 @@
             this.radioBtn_TwoWay.Name = "radioBtn_TwoWay";
             this.radioBtn_TwoWay.Size = new System.Drawing.Size(98, 17);
             this.radioBtn_TwoWay.TabIndex = 3;
-            this.radioBtn_TwoWay.TabStop = true;
             this.radioBtn_TwoWay.Text = "Two-Way Sync";
             this.radioBtn_TwoWay.UseVisualStyleBackColor = true;
             // 
@@ -298,7 +286,6 @@
             this.radioBtn_days.Name = "radioBtn_days";
             this.radioBtn_days.Size = new System.Drawing.Size(78, 17);
             this.radioBtn_days.TabIndex = 2;
-            this.radioBtn_days.TabStop = true;
             this.radioBtn_days.Text = "Sync every";
             this.radioBtn_days.UseVisualStyleBackColor = true;
             this.radioBtn_days.CheckedChanged += new System.EventHandler(this.radioBtn_24hours_CheckedChanged);
@@ -310,7 +297,6 @@
             this.radioBtn_hour.Name = "radioBtn_hour";
             this.radioBtn_hour.Size = new System.Drawing.Size(78, 17);
             this.radioBtn_hour.TabIndex = 1;
-            this.radioBtn_hour.TabStop = true;
             this.radioBtn_hour.Text = "Sync every";
             this.radioBtn_hour.UseVisualStyleBackColor = true;
             this.radioBtn_hour.CheckedChanged += new System.EventHandler(this.radioBtn_1hour_CheckedChanged);
@@ -326,15 +312,210 @@
             this.radioBtn_min.UseVisualStyleBackColor = true;
             this.radioBtn_min.CheckedChanged += new System.EventHandler(this.radioBtn_10min_CheckedChanged);
             // 
+            // lbl_Source
+            // 
+            this.lbl_Source.AutoSize = true;
+            this.lbl_Source.Location = new System.Drawing.Point(216, 50);
+            this.lbl_Source.Name = "lbl_Source";
+            this.lbl_Source.Size = new System.Drawing.Size(41, 26);
+            this.lbl_Source.TabIndex = 8;
+            this.lbl_Source.Text = "Source\r\nFolder\r\n";
+            // 
+            // radioBtn_Folder1
+            // 
+            this.radioBtn_Folder1.AutoSize = true;
+            this.radioBtn_Folder1.Checked = true;
+            this.radioBtn_Folder1.Location = new System.Drawing.Point(219, 92);
+            this.radioBtn_Folder1.Name = "radioBtn_Folder1";
+            this.radioBtn_Folder1.Size = new System.Drawing.Size(14, 13);
+            this.radioBtn_Folder1.TabIndex = 14;
+            this.radioBtn_Folder1.TabStop = true;
+            this.radioBtn_Folder1.UseVisualStyleBackColor = true;
+            this.radioBtn_Folder1.CheckedChanged += new System.EventHandler(this.radioBtn_Folder1_CheckedChanged);
+            // 
+            // radioBtn_Folder2
+            // 
+            this.radioBtn_Folder2.AutoSize = true;
+            this.radioBtn_Folder2.Location = new System.Drawing.Point(219, 125);
+            this.radioBtn_Folder2.Name = "radioBtn_Folder2";
+            this.radioBtn_Folder2.Size = new System.Drawing.Size(14, 13);
+            this.radioBtn_Folder2.TabIndex = 15;
+            this.radioBtn_Folder2.UseVisualStyleBackColor = true;
+            this.radioBtn_Folder2.CheckedChanged += new System.EventHandler(this.radioBtn_Folder2_CheckedChanged);
+            // 
+            // groupBox_SyncFilters
+            // 
+            this.groupBox_SyncFilters.Controls.Add(this.textBox_IncludeFiles2);
+            this.groupBox_SyncFilters.Controls.Add(this.textBox_ExcludeFiles2);
+            this.groupBox_SyncFilters.Controls.Add(this.textBox_ExcludeFolders2);
+            this.groupBox_SyncFilters.Controls.Add(this.textBox_IncludeFiles1);
+            this.groupBox_SyncFilters.Controls.Add(this.textBox_ExcludeFiles1);
+            this.groupBox_SyncFilters.Controls.Add(this.textBox_ExcludeFolders1);
+            this.groupBox_SyncFilters.Controls.Add(this.checkBox_IncludeFiles2);
+            this.groupBox_SyncFilters.Controls.Add(this.checkBox_ExcludeFiles2);
+            this.groupBox_SyncFilters.Controls.Add(this.checkBox_ExcludeFolders2);
+            this.groupBox_SyncFilters.Controls.Add(this.checkBox_IncludeFiles1);
+            this.groupBox_SyncFilters.Controls.Add(this.checkBox_ExcludeFiles1);
+            this.groupBox_SyncFilters.Controls.Add(this.checkBox_ExcludeFolders1);
+            this.groupBox_SyncFilters.Controls.Add(this.lbl_Folder2Filter);
+            this.groupBox_SyncFilters.Controls.Add(this.lbl_Folder1Filter);
+            this.groupBox_SyncFilters.Location = new System.Drawing.Point(219, 204);
+            this.groupBox_SyncFilters.Name = "groupBox_SyncFilters";
+            this.groupBox_SyncFilters.Size = new System.Drawing.Size(477, 149);
+            this.groupBox_SyncFilters.TabIndex = 16;
+            this.groupBox_SyncFilters.TabStop = false;
+            this.groupBox_SyncFilters.Text = "Synchronization Filters";
+            // 
+            // lbl_Folder1Filter
+            // 
+            this.lbl_Folder1Filter.AutoSize = true;
+            this.lbl_Folder1Filter.Location = new System.Drawing.Point(80, 29);
+            this.lbl_Folder1Filter.Name = "lbl_Folder1Filter";
+            this.lbl_Folder1Filter.Size = new System.Drawing.Size(45, 13);
+            this.lbl_Folder1Filter.TabIndex = 0;
+            this.lbl_Folder1Filter.Text = "Folder 1";
+            // 
+            // lbl_Folder2Filter
+            // 
+            this.lbl_Folder2Filter.AutoSize = true;
+            this.lbl_Folder2Filter.Location = new System.Drawing.Point(343, 29);
+            this.lbl_Folder2Filter.Name = "lbl_Folder2Filter";
+            this.lbl_Folder2Filter.Size = new System.Drawing.Size(45, 13);
+            this.lbl_Folder2Filter.TabIndex = 1;
+            this.lbl_Folder2Filter.Text = "Folder 2";
+            // 
+            // checkBox_ExcludeFolders1
+            // 
+            this.checkBox_ExcludeFolders1.AutoSize = true;
+            this.checkBox_ExcludeFolders1.Location = new System.Drawing.Point(9, 64);
+            this.checkBox_ExcludeFolders1.Name = "checkBox_ExcludeFolders1";
+            this.checkBox_ExcludeFolders1.Size = new System.Drawing.Size(101, 17);
+            this.checkBox_ExcludeFolders1.TabIndex = 2;
+            this.checkBox_ExcludeFolders1.Text = "Exclude Folders";
+            this.checkBox_ExcludeFolders1.UseVisualStyleBackColor = true;
+            this.checkBox_ExcludeFolders1.CheckedChanged += new System.EventHandler(this.checkBox_ExcludeFolders1_CheckedChanged);
+            // 
+            // checkBox_ExcludeFiles1
+            // 
+            this.checkBox_ExcludeFiles1.AutoSize = true;
+            this.checkBox_ExcludeFiles1.Location = new System.Drawing.Point(9, 96);
+            this.checkBox_ExcludeFiles1.Name = "checkBox_ExcludeFiles1";
+            this.checkBox_ExcludeFiles1.Size = new System.Drawing.Size(88, 17);
+            this.checkBox_ExcludeFiles1.TabIndex = 3;
+            this.checkBox_ExcludeFiles1.Text = "Exclude Files";
+            this.checkBox_ExcludeFiles1.UseVisualStyleBackColor = true;
+            this.checkBox_ExcludeFiles1.CheckedChanged += new System.EventHandler(this.checkBox_ExcludeFiles1_CheckedChanged);
+            // 
+            // checkBox_IncludeFiles1
+            // 
+            this.checkBox_IncludeFiles1.AutoSize = true;
+            this.checkBox_IncludeFiles1.Location = new System.Drawing.Point(9, 128);
+            this.checkBox_IncludeFiles1.Name = "checkBox_IncludeFiles1";
+            this.checkBox_IncludeFiles1.Size = new System.Drawing.Size(85, 17);
+            this.checkBox_IncludeFiles1.TabIndex = 4;
+            this.checkBox_IncludeFiles1.Text = "Include Files";
+            this.checkBox_IncludeFiles1.UseVisualStyleBackColor = true;
+            this.checkBox_IncludeFiles1.CheckedChanged += new System.EventHandler(this.checkBox_IncludeFiles1_CheckedChanged);
+            // 
+            // checkBox_ExcludeFolders2
+            // 
+            this.checkBox_ExcludeFolders2.AutoSize = true;
+            this.checkBox_ExcludeFolders2.Location = new System.Drawing.Point(264, 62);
+            this.checkBox_ExcludeFolders2.Name = "checkBox_ExcludeFolders2";
+            this.checkBox_ExcludeFolders2.Size = new System.Drawing.Size(101, 17);
+            this.checkBox_ExcludeFolders2.TabIndex = 5;
+            this.checkBox_ExcludeFolders2.Text = "Exclude Folders";
+            this.checkBox_ExcludeFolders2.UseVisualStyleBackColor = true;
+            this.checkBox_ExcludeFolders2.CheckedChanged += new System.EventHandler(this.checkBox_ExcludeFolders2_CheckedChanged);
+            // 
+            // checkBox_ExcludeFiles2
+            // 
+            this.checkBox_ExcludeFiles2.AutoSize = true;
+            this.checkBox_ExcludeFiles2.Location = new System.Drawing.Point(264, 96);
+            this.checkBox_ExcludeFiles2.Name = "checkBox_ExcludeFiles2";
+            this.checkBox_ExcludeFiles2.Size = new System.Drawing.Size(88, 17);
+            this.checkBox_ExcludeFiles2.TabIndex = 6;
+            this.checkBox_ExcludeFiles2.Text = "Exclude Files";
+            this.checkBox_ExcludeFiles2.UseVisualStyleBackColor = true;
+            this.checkBox_ExcludeFiles2.CheckedChanged += new System.EventHandler(this.checkBox_ExcludeFiles2_CheckedChanged);
+            // 
+            // checkBox_IncludeFiles2
+            // 
+            this.checkBox_IncludeFiles2.AutoSize = true;
+            this.checkBox_IncludeFiles2.Location = new System.Drawing.Point(264, 128);
+            this.checkBox_IncludeFiles2.Name = "checkBox_IncludeFiles2";
+            this.checkBox_IncludeFiles2.Size = new System.Drawing.Size(85, 17);
+            this.checkBox_IncludeFiles2.TabIndex = 7;
+            this.checkBox_IncludeFiles2.Text = "Include Files";
+            this.checkBox_IncludeFiles2.UseVisualStyleBackColor = true;
+            this.checkBox_IncludeFiles2.CheckedChanged += new System.EventHandler(this.checkBox_IncludeFiles2_CheckedChanged);
+            // 
+            // textBox_ExcludeFolders1
+            // 
+            this.textBox_ExcludeFolders1.Enabled = false;
+            this.textBox_ExcludeFolders1.Location = new System.Drawing.Point(114, 59);
+            this.textBox_ExcludeFolders1.Name = "textBox_ExcludeFolders1";
+            this.textBox_ExcludeFolders1.Size = new System.Drawing.Size(100, 20);
+            this.textBox_ExcludeFolders1.TabIndex = 8;
+            this.textBox_ExcludeFolders1.TabStop = false;
+            this.textBox_ExcludeFolders1.TextChanged += new System.EventHandler(this.textBox_ExcludeFolders1_TextChanged);
+            // 
+            // textBox_ExcludeFiles1
+            // 
+            this.textBox_ExcludeFiles1.Enabled = false;
+            this.textBox_ExcludeFiles1.Location = new System.Drawing.Point(114, 93);
+            this.textBox_ExcludeFiles1.Name = "textBox_ExcludeFiles1";
+            this.textBox_ExcludeFiles1.Size = new System.Drawing.Size(100, 20);
+            this.textBox_ExcludeFiles1.TabIndex = 9;
+            this.textBox_ExcludeFiles1.TextChanged += new System.EventHandler(this.textBox_ExcludeFiles1_TextChanged);
+            // 
+            // textBox_IncludeFiles1
+            // 
+            this.textBox_IncludeFiles1.Enabled = false;
+            this.textBox_IncludeFiles1.Location = new System.Drawing.Point(114, 125);
+            this.textBox_IncludeFiles1.Name = "textBox_IncludeFiles1";
+            this.textBox_IncludeFiles1.Size = new System.Drawing.Size(100, 20);
+            this.textBox_IncludeFiles1.TabIndex = 10;
+            this.textBox_IncludeFiles1.TextChanged += new System.EventHandler(this.textBox_IncludeFiles1_TextChanged);
+            // 
+            // textBox_ExcludeFolders2
+            // 
+            this.textBox_ExcludeFolders2.Enabled = false;
+            this.textBox_ExcludeFolders2.Location = new System.Drawing.Point(371, 59);
+            this.textBox_ExcludeFolders2.Name = "textBox_ExcludeFolders2";
+            this.textBox_ExcludeFolders2.Size = new System.Drawing.Size(100, 20);
+            this.textBox_ExcludeFolders2.TabIndex = 11;
+            this.textBox_ExcludeFolders2.TextChanged += new System.EventHandler(this.textBox_ExcludeFolders2_TextChanged);
+            // 
+            // textBox_ExcludeFiles2
+            // 
+            this.textBox_ExcludeFiles2.Enabled = false;
+            this.textBox_ExcludeFiles2.Location = new System.Drawing.Point(371, 93);
+            this.textBox_ExcludeFiles2.Name = "textBox_ExcludeFiles2";
+            this.textBox_ExcludeFiles2.Size = new System.Drawing.Size(100, 20);
+            this.textBox_ExcludeFiles2.TabIndex = 12;
+            this.textBox_ExcludeFiles2.TextChanged += new System.EventHandler(this.textBox_ExcludeFiles2_TextChanged);
+            // 
+            // textBox_IncludeFiles2
+            // 
+            this.textBox_IncludeFiles2.Enabled = false;
+            this.textBox_IncludeFiles2.Location = new System.Drawing.Point(371, 126);
+            this.textBox_IncludeFiles2.Name = "textBox_IncludeFiles2";
+            this.textBox_IncludeFiles2.Size = new System.Drawing.Size(100, 20);
+            this.textBox_IncludeFiles2.TabIndex = 13;
+            this.textBox_IncludeFiles2.TextChanged += new System.EventHandler(this.textBox_IncludeFiles2_TextChanged);
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(708, 387);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(708, 465);
+            this.Controls.Add(this.groupBox_SyncFilters);
+            this.Controls.Add(this.radioBtn_Folder2);
+            this.Controls.Add(this.radioBtn_Folder1);
             this.Controls.Add(this.groupBox_Schedule);
             this.Controls.Add(this.groupbox_SyncTask);
-            this.Controls.Add(this.checkBoxPath2);
-            this.Controls.Add(this.checkBoxPath1);
             this.Controls.Add(this.lbl_Source);
             this.Controls.Add(this.lbl_Folders_for_sync);
             this.Controls.Add(this.btn_Browse2);
@@ -345,11 +526,13 @@
             this.Controls.Add(this.txb_Path_2);
             this.Controls.Add(this.txb_Path_1);
             this.Name = "Main_Form";
-            this.Text = "Folders Synchronizer";
+            this.Text = "Files Synchronizer";
             this.groupbox_SyncTask.ResumeLayout(false);
             this.groupbox_SyncTask.PerformLayout();
             this.groupBox_Schedule.ResumeLayout(false);
             this.groupBox_Schedule.PerformLayout();
+            this.groupBox_SyncFilters.ResumeLayout(false);
+            this.groupBox_SyncFilters.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,9 +548,6 @@
         private System.Windows.Forms.Button btn_Browse1;
         private System.Windows.Forms.Button btn_Browse2;
         private System.Windows.Forms.Label lbl_Folders_for_sync;
-        private System.Windows.Forms.Label lbl_Source;
-        private System.Windows.Forms.CheckBox checkBoxPath1;
-        private System.Windows.Forms.CheckBox checkBoxPath2;
         private System.Windows.Forms.GroupBox groupbox_SyncTask;
         private System.Windows.Forms.RadioButton radioBtn_TwoWay;
         private System.Windows.Forms.RadioButton radioBtn_OneWay;
@@ -382,6 +562,24 @@
         private System.Windows.Forms.Label lbl_min;
         private System.Windows.Forms.TextBox textBox_days;
         private System.Windows.Forms.RadioButton radioBtn_OneTime;
+        private System.Windows.Forms.Label lbl_Source;
+        private System.Windows.Forms.RadioButton radioBtn_Folder1;
+        private System.Windows.Forms.RadioButton radioBtn_Folder2;
+        private System.Windows.Forms.GroupBox groupBox_SyncFilters;
+        private System.Windows.Forms.TextBox textBox_IncludeFiles2;
+        private System.Windows.Forms.TextBox textBox_ExcludeFiles2;
+        private System.Windows.Forms.TextBox textBox_ExcludeFolders2;
+        private System.Windows.Forms.TextBox textBox_IncludeFiles1;
+        private System.Windows.Forms.TextBox textBox_ExcludeFiles1;
+        private System.Windows.Forms.TextBox textBox_ExcludeFolders1;
+        private System.Windows.Forms.CheckBox checkBox_IncludeFiles2;
+        private System.Windows.Forms.CheckBox checkBox_ExcludeFiles2;
+        private System.Windows.Forms.CheckBox checkBox_ExcludeFolders2;
+        private System.Windows.Forms.CheckBox checkBox_IncludeFiles1;
+        private System.Windows.Forms.CheckBox checkBox_ExcludeFiles1;
+        private System.Windows.Forms.CheckBox checkBox_ExcludeFolders1;
+        private System.Windows.Forms.Label lbl_Folder2Filter;
+        private System.Windows.Forms.Label lbl_Folder1Filter;
     }
 }
 
