@@ -1,0 +1,12 @@
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\bin\x64\Debug\Synch_UI.exe.config
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\bin\x64\Debug\Synch_UI.exe
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\bin\x64\Debug\Synch_UI.pdb
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.dll
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.Files.dll
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.MetadataStorage.dll
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.Main_Form.resources
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.Properties.Resources.resources
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.csproj.GenerateResource.Cache
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.exe
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.pdb
+C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.csprojResolveAssemblyReference.cache
