@@ -26,69 +26,80 @@ namespace Synch_UI
 
         public string LocalPath
         {
-            set
-            {
-                localPath = value;
-            }
+            set { localPath = value; }
         }
 
         public string RemotePath
         {
-            set
-            {
-                remotePath = value;
-            }
+            set { remotePath = value; }
         }
 
         public SyncDirectionEnum SyncDirection
         {
-            set
-            {
-                syncDirection = value;
-            }
+            set { syncDirection = value; }
         }
 
+        public string ExcludeFoldersLocalPath
+        {
+            set { filterForLocalPath.SubdirectoryExcludes.Add(value); }
+        }
 
-        //public string ExcludeFolders
-        //{
-        //    set
-        //    {
-        //        _filter.SubdirectoryExcludes.Add(value);
-        //    }
-        //}
+        public string ExcludeFilesLocalPath
+        {
+            set { filterForLocalPath.FileNameExcludes.Add(value); }
+        }
 
-        //public string ExcludeFiles
-        //{
-        //    set
-        //    {
-        //        _filter.FileNameExcludes.Add(value);
-        //    }
-        //}
+        public string IncludeFilesLocalPath
+        {
+            set { filterForLocalPath.FileNameIncludes.Add(value); }
+        }
 
-        //public string IncludeFiles
-        //{
-        //    set
-        //    {
-        //        _filter.FileNameIncludes.Add(value);
-        //    }
-        //}
+        public string ExcludeFoldersRemotePath
+        {
+            set { filterForRemotePath.SubdirectoryExcludes.Add(value); }
+        }
 
-        //public void ClearExcludeFolders()
-        //{
-        //    _filter.SubdirectoryExcludes.Clear();
-        //}
+        public string ExcludeFilesRemotePath
+        {
+            set { filterForRemotePath.FileNameExcludes.Add(value); }
+        }
 
-        //public void ClearExcludeFiles()
-        //{
-        //    _filter.FileNameExcludes.Clear();
-        //}
+        public string IncludeFilesRemotePath
+        {
+            set { filterForRemotePath.FileNameIncludes.Add(value); }
+        }
 
-        //public void ClearIncludeFiles()
-        //{
-        //    _filter.FileNameIncludes.Clear();
-        //}
+        public void ClearExcludeFoldersLocalPath()
+        {
+            filterForLocalPath.SubdirectoryExcludes.Clear();
+        }
 
-        public SyncDirectionOrder SetDirection(SyncDirectionEnum syncDirection)
+        public void ClearExcludeFilesLocalPath()
+        {
+            filterForLocalPath.FileNameExcludes.Clear();
+        }
+
+        public void ClearIncludeFilesLocalPath()
+        {
+            filterForLocalPath.FileNameIncludes.Clear();
+        }
+
+        public void ClearExcludeFoldersRemotePath()
+        {
+            filterForRemotePath.SubdirectoryExcludes.Clear();
+        }
+
+        public void ClearExcludeFilesRemotePath()
+        {
+            filterForRemotePath.FileNameExcludes.Clear();
+        }
+
+        public void ClearIncludeFilesRemotePath()
+        {
+            filterForRemotePath.FileNameIncludes.Clear();
+        }
+
+        private SyncDirectionOrder SetDirection(SyncDirectionEnum syncDirection)
         {
             switch (syncDirection)
             {
@@ -140,7 +151,6 @@ namespace Synch_UI
             int schedulerPeriod = schedulerPeriodDay * 24 * 60 * 60 * 1000;
             ScedulerTimer(schedulerPeriod);
         }
-
 
         private void ScedulerTimer(int schedulerPeriodMs)
         {

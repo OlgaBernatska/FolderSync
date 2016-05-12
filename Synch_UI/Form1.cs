@@ -87,18 +87,18 @@ namespace Synch_UI
             }
         }
 
+        private void txb_Path_2_TextChanged(object sender, EventArgs e)
+        {
+            synch.RemotePath = txb_Path_2.Text;
+        }
+
         private void txb_Path_2_MouseClick(object sender, MouseEventArgs e)
         {
             if (txb_Path_2.Text == "Enter Path to Folder 2")
             {
                 txb_Path_2.Clear();
             }
-        }
-
-        private void txb_Path_2_TextChanged(object sender, EventArgs e)
-        {
-            synch.RemotePath = txb_Path_2.Text;
-        }
+        }        
 
         private void btn_Browse1_Click(object sender, EventArgs e)
         {
@@ -270,7 +270,14 @@ namespace Synch_UI
 
         private void textBox_ExcludeFolders1_TextChanged(object sender, EventArgs e)
         {
-
+            if (checkBox_ExcludeFolders1.Checked)
+            {
+                synch.ExcludeFoldersLocalPath = textBox_ExcludeFolders1.Text;
+            }
+            else
+            {
+                synch.ClearExcludeFoldersLocalPath();
+            }
         }
 
         private void checkBox_ExcludeFiles1_CheckedChanged(object sender, EventArgs e)
@@ -287,7 +294,14 @@ namespace Synch_UI
 
         private void textBox_ExcludeFiles1_TextChanged(object sender, EventArgs e)
         {
-
+            if (checkBox_ExcludeFiles1.Checked)
+            {
+                synch.ExcludeFilesLocalPath = textBox_ExcludeFiles1.Text;
+            }
+            else
+            {
+                synch.ClearExcludeFilesLocalPath();
+            }
         }
 
         private void checkBox_IncludeFiles1_CheckedChanged(object sender, EventArgs e)
@@ -304,7 +318,14 @@ namespace Synch_UI
 
         private void textBox_IncludeFiles1_TextChanged(object sender, EventArgs e)
         {
-
+            if (checkBox_IncludeFiles1.Checked)
+            {
+                synch.IncludeFilesLocalPath = textBox_IncludeFiles1.Text;
+            }
+            else
+            {
+                synch.ClearIncludeFilesLocalPath();
+            }
         }
 
         private void checkBox_ExcludeFolders2_CheckedChanged(object sender, EventArgs e)
@@ -321,7 +342,14 @@ namespace Synch_UI
 
         private void textBox_ExcludeFolders2_TextChanged(object sender, EventArgs e)
         {
-
+            if (checkBox_ExcludeFolders2.Checked)
+            {
+                synch.ExcludeFoldersRemotePath = textBox_ExcludeFolders2.Text;
+            }
+            else
+            {
+                synch.ClearExcludeFoldersRemotePath();
+            }
         }
 
         private void checkBox_ExcludeFiles2_CheckedChanged(object sender, EventArgs e)
@@ -338,7 +366,14 @@ namespace Synch_UI
 
         private void textBox_ExcludeFiles2_TextChanged(object sender, EventArgs e)
         {
-
+            if (checkBox_ExcludeFiles2.Checked)
+            {
+                synch.ExcludeFilesRemotePath = textBox_ExcludeFiles2.Text;
+            }
+            else
+            {
+                synch.ClearExcludeFilesRemotePath();
+            }
         }
 
         private void checkBox_IncludeFiles2_CheckedChanged(object sender, EventArgs e)
@@ -355,7 +390,14 @@ namespace Synch_UI
 
         private void textBox_IncludeFiles2_TextChanged(object sender, EventArgs e)
         {
-
+            if (checkBox_IncludeFiles2.Checked)
+            {
+                synch.IncludeFilesRemotePath = textBox_IncludeFiles2.Text;
+            }
+            else
+            {
+                synch.ClearIncludeFilesRemotePath();
+            }
         }
 
         private void Main_Form_Load(object sender, EventArgs e)

@@ -13,3 +13,15 @@ C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x
 D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Synch_UI.exe.config
 D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.exe
 D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.pdb
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Synch_UI.exe
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Synch_UI.pdb
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.dll
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.Files.dll
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.MetadataStorage.dll
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.xml
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.Files.xml
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Microsoft.Synchronization.MetadataStorage.xml
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.csprojResolveAssemblyReference.cache
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.Main_Form.resources
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.Properties.Resources.resources
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.csproj.GenerateResource.Cache
