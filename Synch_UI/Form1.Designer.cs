@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
             this.txb_Path_1 = new System.Windows.Forms.TextBox();
             this.txb_Path_2 = new System.Windows.Forms.TextBox();
             this.lbl_Folder1 = new System.Windows.Forms.Label();
@@ -165,7 +166,6 @@
             this.groupbox_SyncTask.TabIndex = 12;
             this.groupbox_SyncTask.TabStop = false;
             this.groupbox_SyncTask.Text = "Synchronization Task";
-            //this.groupbox_SyncTask.Enter += new System.EventHandler(this.groupbox_SyncTask);
             // 
             // radioBtn_TwoWay
             // 
@@ -313,7 +313,6 @@
             this.lbl_hours.Size = new System.Drawing.Size(33, 13);
             this.lbl_hours.TabIndex = 7;
             this.lbl_hours.Text = "hours";
-            //this.lbl_hours.Click += new System.EventHandler(this.lbl_hours_Click);
             // 
             // lbl_min
             // 
@@ -536,6 +535,7 @@
             this.Controls.Add(this.lbl_Folder1);
             this.Controls.Add(this.txb_Path_2);
             this.Controls.Add(this.txb_Path_1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main_Form";
             this.Text = "Files Synchronizer";
             this.Load += new System.EventHandler(this.Main_Form_Load);
