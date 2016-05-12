@@ -10,3 +10,6 @@ C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x
 C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.exe
 C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.pdb
 C:\Users\Sergii\Downloads\FolderSync-master (2)\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.csprojResolveAssemblyReference.cache
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\bin\x64\Debug\Synch_UI.exe.config
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.exe
+D:\dropbox\IT\С#\Coding\FolderSync-master\Synch_UI\obj\x64\Debug\Synch_UI.pdb
