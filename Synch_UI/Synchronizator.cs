@@ -123,20 +123,6 @@ namespace Synch_UI
             synchOrchestrator.Synchronize();
         }
 
-
-        //public void OnceSynch(string path1, string path2, SyncDirectionEnum syncDirection)
-        //{
-        //    FileSyncScopeFilter _filter = new FileSyncScopeFilter();
-        //    FileSyncOptions _options = FileSyncOptions.None;
-        //    FileSyncProvider folderProvider1 = new FileSyncProvider(path1, _filter, _options);
-        //    FileSyncProvider folderProvider2 = new FileSyncProvider(path2, _filter, _options);
-        //    SyncOrchestrator synchOrchestrator = new SyncOrchestrator();
-        //    synchOrchestrator.LocalProvider = folderProvider1;
-        //    synchOrchestrator.RemoteProvider = folderProvider2;
-        //    synchOrchestrator.Direction = SetDirection(syncDirection);
-        //    synchOrchestrator.Synchronize();
-        //}
-
         public void ScheduledMinSynchronize(int schedulerPeriodMin)
         {
             int schedulerPeriod = schedulerPeriodMin * 1000;
@@ -175,53 +161,6 @@ namespace Synch_UI
             synchOrchestrator.Synchronize();
         }
 
-        //private void ScedulerTimer(int schedulerPeriodMs, string path1, string path2, SyncDirectionEnum syncDirection)
-        //{
-        //    System.Windows.Forms.Timer MyTimerMin = new System.Windows.Forms.Timer();
-        //    MyTimerMin.Interval = schedulerPeriodMs;
-        //    MyTimerMin.Tick += new EventHandler((s,e) => MyTimer_Tick(s,e, path1, path2,  syncDirection));
-        //    MyTimerMin.Start();
-        //}
-
-        //private void MyTimer_Tick(object sender, EventArgs e, string path1, string path2, SyncDirectionEnum syncDirection)
-        //{            
-        //    OnceSynch(path1, path2, syncDirection);
-        //}
-
-        //private void ScedulerTimer(int schedulerPeriodMs, string path1, string path2, SyncDirectionEnum syncDirection)
-        //{
-        //    System.Windows.Forms.Timer MyTimer = new System.Windows.Forms.Timer();
-        //    MyTimer.Interval = schedulerPeriodMs;
-        //    MyTimer.Tick += (sender, eventArgs) =>
-        //    {
-        //        OnceSynch(path1, path2, syncDirection);
-        //    };
-        //}
-
-
-        //public event EventHandler<TimerElapsedArgs> TimerElapsed;
-
-        //protected virtual void OnTimerElapsed(TimerElapsedArgs e)
-        //{            
-        //    if (TimerElapsed != null)
-        //    {
-        //        TimerElapsed(this, e);
-        //    }
-        //}
-
-
-
-
-
     }
 
-    //public class TimerElapsedArgs : EventArgs
-    //{
-    //    public int schedulerPeriodMs { get; set; }
-    //    public string path1 { get; set; }
-    //    public string path2 { get; set; }
-    //    public SyncDirectionEnum syncDirection { get; set; }
-    //}
-
 }
-//int schedulerPeriodMs, string path1, string path2, SyncDirectionEnum syncDirection
