@@ -24,44 +24,52 @@ namespace Synch_UI
 
         private void btn_StartSynch_Click(object sender, EventArgs e)
         {
-            if (radioBtn_OneTime.Checked)
+            try
             {
-                synch.OnceSynch();
-            }
-            else
-            {
-                if (radioBtn_min.Checked)
+
+                if (radioBtn_OneTime.Checked)
                 {
-                    int min = 0;
-                    if (int.TryParse(numericUpDown_minutes.Text, out min))
-                    {
-                        synch.ScheduledMinSynchronize(min);
-                    }
+                    synch.OnceSynch();
                 }
                 else
                 {
-                    if (radioBtn_hour.Checked)
+                    if (radioBtn_min.Checked)
                     {
-                        int hour = 0;
-                        if (int.TryParse(numericUpDown_hours.Text, out hour))
+                        int min = 0;
+                        if (int.TryParse(numericUpDown_minutes.Text, out min))
                         {
-                            synch.ScheduledHourSynchronize(hour);
+                            synch.ScheduledMinSynchronize(min);
                         }
                     }
                     else
                     {
-                        if (radioBtn_days.Checked)
+                        if (radioBtn_hour.Checked)
                         {
-                            int day = 0;
-                            if (int.TryParse(numericUpDown_days.Text, out day))
+                            int hour = 0;
+                            if (int.TryParse(numericUpDown_hours.Text, out hour))
                             {
-                                synch.ScheduledDaySynchronize(day);
+                                synch.ScheduledHourSynchronize(hour);
+                            }
+                        }
+                        else
+                        {
+                            if (radioBtn_days.Checked)
+                            {
+                                int day = 0;
+                                if (int.TryParse(numericUpDown_days.Text, out day))
+                                {
+                                    synch.ScheduledDaySynchronize(day);
+                                }
                             }
                         }
                     }
                 }
             }
-            
+
+            catch (System.ArgumentException)
+            {
+                MessageBox.Show("Please enter path to folders that are going to be synchronized");
+            }
         }
 
         private void radioBtn_OneWay_CheckedChanged_1(object sender, EventArgs e)

@@ -99,18 +99,20 @@
             // lbl_Folder1
             // 
             this.lbl_Folder1.AutoSize = true;
-            this.lbl_Folder1.Location = new System.Drawing.Point(272, 92);
+            this.lbl_Folder1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl_Folder1.Location = new System.Drawing.Point(256, 89);
             this.lbl_Folder1.Name = "lbl_Folder1";
-            this.lbl_Folder1.Size = new System.Drawing.Size(33, 13);
+            this.lbl_Folder1.Size = new System.Drawing.Size(49, 17);
             this.lbl_Folder1.TabIndex = 2;
             this.lbl_Folder1.Text = "From:";
             // 
             // lbl2_Folder2
             // 
             this.lbl2_Folder2.AutoSize = true;
-            this.lbl2_Folder2.Location = new System.Drawing.Point(282, 126);
+            this.lbl2_Folder2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl2_Folder2.Location = new System.Drawing.Point(273, 123);
             this.lbl2_Folder2.Name = "lbl2_Folder2";
-            this.lbl2_Folder2.Size = new System.Drawing.Size(23, 13);
+            this.lbl2_Folder2.Size = new System.Drawing.Size(32, 17);
             this.lbl2_Folder2.TabIndex = 3;
             this.lbl2_Folder2.Text = "To:";
             // 
@@ -226,6 +228,7 @@
             0,
             0});
             this.numericUpDown_days.Name = "numericUpDown_days";
+            this.numericUpDown_days.ReadOnly = true;
             this.numericUpDown_days.Size = new System.Drawing.Size(43, 20);
             this.numericUpDown_days.TabIndex = 19;
             this.numericUpDown_days.Value = new decimal(new int[] {
@@ -263,6 +266,7 @@
             0,
             0});
             this.numericUpDown_hours.Name = "numericUpDown_hours";
+            this.numericUpDown_hours.ReadOnly = true;
             this.numericUpDown_hours.Size = new System.Drawing.Size(43, 20);
             this.numericUpDown_hours.TabIndex = 18;
             this.numericUpDown_hours.Value = new decimal(new int[] {
@@ -296,8 +300,10 @@
             0,
             0});
             this.numericUpDown_minutes.Name = "numericUpDown_minutes";
+            this.numericUpDown_minutes.ReadOnly = true;
             this.numericUpDown_minutes.Size = new System.Drawing.Size(43, 20);
             this.numericUpDown_minutes.TabIndex = 17;
+            this.numericUpDown_minutes.TabStop = false;
             this.numericUpDown_minutes.Value = new decimal(new int[] {
             1,
             0,
