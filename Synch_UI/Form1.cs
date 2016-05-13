@@ -68,7 +68,7 @@ namespace Synch_UI
 
             catch (System.ArgumentException)
             {
-                MessageBox.Show("Please enter path to folders that are going to be synchronized");
+                MessageBox.Show(" Something wrong happened \n Please make sure the paths to folders are entered and folders exist. \n If the issue is still occured, please contact Developers - Sergii B and Olga B");
             }
         }
 
