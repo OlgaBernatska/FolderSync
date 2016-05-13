@@ -225,7 +225,9 @@ namespace Synch_UI
         //{
 
         //}
-        //group with radiobuttons and numericUpDown to select schedule
+
+        /*group with radiobuttons and numericUpDown to select schedule*/
+
         private void groupBox_Schedule_Enter(object sender, EventArgs e)
         {
 
@@ -273,6 +275,7 @@ namespace Synch_UI
             else
             {
                 textBox_ExcludeFolders1.Enabled = false;
+                synch.ClearExcludeFoldersLocalPath();
             }
         }
 
@@ -297,6 +300,7 @@ namespace Synch_UI
             else
             {
                 textBox_ExcludeFiles1.Enabled = false;
+                synch.ClearExcludeFilesLocalPath();
             }
         }
 
@@ -321,6 +325,7 @@ namespace Synch_UI
             else
             {
                 textBox_IncludeFiles1.Enabled = false;
+                synch.ClearIncludeFilesLocalPath();
             }
         }
 
@@ -345,6 +350,7 @@ namespace Synch_UI
             else
             {
                 textBox_ExcludeFolders2.Enabled = false;
+                synch.ClearExcludeFoldersRemotePath();
             }
         }
 
@@ -369,6 +375,7 @@ namespace Synch_UI
             else
             {
                 textBox_ExcludeFiles2.Enabled = false;
+                synch.ClearExcludeFilesRemotePath();
             }
         }
 
@@ -393,6 +400,7 @@ namespace Synch_UI
             else
             {
                 textBox_IncludeFiles2.Enabled = false;
+
             }
         }
 

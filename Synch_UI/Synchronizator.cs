@@ -136,7 +136,7 @@ namespace Synch_UI
 
         public void ScheduledMinSynchronize(int schedulerPeriodMin)
         {
-            int schedulerPeriod = schedulerPeriodMin * 1000;
+            int schedulerPeriod = schedulerPeriodMin * 60 * 1000;
             ScedulerTimer(schedulerPeriod);
         }
 
@@ -170,7 +170,6 @@ namespace Synch_UI
             synchOrchestrator.Direction = SetDirection(syncDirection);
             synchOrchestrator.Synchronize();
         }
-
     }
 
 }
