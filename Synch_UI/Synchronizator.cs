@@ -12,7 +12,7 @@ namespace Synch_UI
 {
     public enum SyncDirectionEnum
     {
-        BothDirection, LocalToRemote, RemoteToLocal
+        LocalToRemote, BothDirection,  RemoteToLocal // Bug fix - default - one direction, LocalToRemote switched to be first in the list
     }
 
     public class Synchronizator
@@ -117,7 +117,7 @@ namespace Synch_UI
                     }
                 default:
                     {
-                        return SyncDirectionOrder.UploadAndDownload;
+                        return SyncDirectionOrder.Upload; // bug fix - in UI the default is one direction, class aligned accordingly
                     }
             }
         }
